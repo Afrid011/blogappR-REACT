@@ -22,10 +22,8 @@ export default function Login() {
         return;
       }
 
-      // Save user data
       localStorage.setItem('user', JSON.stringify(user));
 
-      // 🔁 Hard redirect to correct dashboard
       if (user.role === 'admin') {
         window.location.href = '/admin';
       } else if (user.role === 'creator') {
@@ -45,6 +43,7 @@ export default function Login() {
       <form className="login-form" onSubmit={handleLogin}>
         <h2>🔐 Login</h2>
         <input
+          name="username"
           type="text"
           placeholder="Username"
           value={username}
@@ -52,6 +51,7 @@ export default function Login() {
           required
         />
         <input
+          name="password"
           type="password"
           placeholder="Password"
           value={password}
