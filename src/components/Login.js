@@ -10,8 +10,9 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const res = await api.post('/users/login', null, {
-        params: { username, password }
+      const res = await api.post('/users/login', {
+        username,
+        password
       });
 
       console.log('✅ Login response:', res.data);
