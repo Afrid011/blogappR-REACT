@@ -47,6 +47,7 @@ export default function Login() {
           value={username}
           onChange={e => setUsername(e.target.value)}
           required
+          autoComplete="username"
         />
         <input
           name="password"
@@ -55,6 +56,7 @@ export default function Login() {
           value={password}
           onChange={e => setPassword(e.target.value)}
           required
+          autoComplete="current-password"
         />
         <button type="submit">Login</button>
       </form>
