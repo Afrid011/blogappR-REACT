@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  color: #2d3e50;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #00bcd4;
+  box-shadow: 0 0 0 2px rgba(0, 188, 212, 0.2);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f0f4f8;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  display: inline-block;
+}
+
+.btn.primary {
+  background-color: #00bcd4;
+}
+
+.btn.secondary {
+  background-color: #3498db;
+}
+
+.btn.warning {
+  background-color: #f39c12;
+}
+
+.btn.danger {
+  background-color: #e74c3c;
+}
+
+.btn.info {
+  background-color: #2980b9;
+}

@@ -1,0 +1,57 @@
+.creator-dashboard {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  max-width: 800px;
+  margin: auto;
+}
+
+.creator-dashboard h2 {
+  margin-bottom: 1rem;
+  color: #2d3e50;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.btn.primary {
+  background-color: #00bcd4;
+}
+
+.btn.info {
+  background-color: #3498db;
+}
+
+.btn.warning {
+  background-color: #f39c12;
+}
+
+.btn.danger {
+  background-color: #e74c3c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f4f8;
+  font-weight: 600;
+}
